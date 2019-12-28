@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk')
 const path = require('path')
 const fs = require('fs')
 
@@ -51,9 +50,7 @@ scan().then(contents => {
 
   for (const folder of folders) {
     console.log(
-      `${chalk.bold(
-        String(fmtSize(total[folder])).padStart(size, ' '),
-      )}   ${folder}`,
+      `${String(fmtSize(total[folder])).padStart(size, ' ')}   ${folder}`,
     )
   }
 })

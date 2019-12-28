@@ -1,13 +1,10 @@
 {
   "name": "sizeit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "sizeit": "index.js"
-  },
-  "dependencies": {
-    "chalk": "^3.0.0"
   },
   "repository": {
     "type": "git",

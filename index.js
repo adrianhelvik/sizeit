@@ -64,8 +64,8 @@ scan().then(contents => {
 })
 
 function fmtSize(size) {
-  if (size > 1024 ** 3) return (size / 1024 ** 3).toFixed(1) + 'gb'
-  if (size > 1024 ** 2) return (size / 1024 ** 2).toFixed(1) + 'mb'
-  if (size > 1024) return (size / 1024).toFixed(1) + 'kb'
-  return size + ' b '
+  if (size > 1024 ** 3) return (size / 1024 ** 3).toFixed(1) + 'GiB'
+  if (size > 1024 ** 2) return (size / 1024 ** 2).toFixed(1) + 'MiB'
+  if (size > 1024) return (size / 1024).toFixed(1) + 'KiB'
+  return size + 'B  '
 }

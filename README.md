@@ -3,6 +3,10 @@
 A utility library for determining the complete size of the
 contents within a folder.
 
+## Usage
+```bash
+sizeit [directory]
+```
 
 ```bash
 sizeit

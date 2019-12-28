@@ -5,11 +5,11 @@ contents within a folder.
 
 ## Usage
 ```bash
-sizeit [directory]
+npx sizeit [directory]
 ```
 
 ```bash
-sizeit
+npx sizeit
 
 98.6kb   node_modules
 22.5kb   .git

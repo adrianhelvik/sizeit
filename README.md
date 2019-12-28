@@ -11,12 +11,13 @@ npx sizeit [directory]
 ```bash
 npx sizeit
 
-98.6kb   node_modules
-22.5kb   .git
-12.0kb   .README.md.swp
-12.0kb   .index.js.swp
- 2.1kb   yarn.lock
- 1.6kb   index.js
-195 b    package.json
- 31 b    .gitignore
+98.6KiB   node_modules
+35.0KiB   .git
+12.0KiB   .index.js.swp
+ 4.0KiB   .README.md.swp
+ 2.1KiB   yarn.lock
+ 1.8KiB   index.js
+ 327B     README.md
+ 222B     package.json
+  31B     .gitignore
 ```

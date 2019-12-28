@@ -21,8 +21,7 @@ const scan = async (dir = rootDir, contents = {}) => {
   })
 
   if (nonDirectoryStats) {
-    const tmp = dir.split('/')
-    const folderName = tmp[tmp.length - 1]
+    const folderName = path.basename(dir)
     return { [folderName]: nonDirectoryStats.size }
   }
 

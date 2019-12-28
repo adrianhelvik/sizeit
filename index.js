@@ -6,6 +6,14 @@ const fs = require('fs')
 const rootDir = process.argv[2] || process.cwd()
 
 const scan = async (dir = rootDir, contents = {}) => {
+  const stats = await fs.promises.lstat(dir)
+
+  if (!stats.isDirectory()) {
+    const tmp = dir.split('/')
+    const folderName = tmp[tmp.length - 1]
+    return { [folderName]: stats.size }
+  }
+
   const files = await fs.promises.readdir(dir)
 
   await Promise.all(
